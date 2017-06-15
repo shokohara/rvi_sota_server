@@ -291,8 +291,8 @@ object Dependencies {
   lazy val TypesafeConfig = "com.typesafe" % "config" % "1.3.0"
 
   lazy val Slick = Seq (
-    "com.typesafe.slick" %% "slick" % "3.1.1",
-    "com.typesafe.slick" %% "slick-hikaricp" % "3.1.1",
+    "com.typesafe.slick" %% "slick" % "3.2.0",
+    "com.typesafe.slick" %% "slick-hikaricp" % "3.2.0",
     "org.mariadb.jdbc" % "mariadb-java-client" % "1.4.4"
   )
 

@@ -6,7 +6,7 @@ import org.genivi.sota.data.UpdateStatus
 import org.genivi.sota.device_registry.db.DeviceRepository
 import org.genivi.sota.messaging.MessageBusPublisher
 import org.genivi.sota.messaging.Messages.{DeviceUpdateStatus, UpdateSpec}
-import slick.driver.MySQLDriver.api._
+import slick.jdbc.MySQLProfile.api._
 
 import scala.concurrent.{ExecutionContext, Future}
 

@@ -14,7 +14,7 @@ import org.genivi.sota.data.{Interval, Namespace, PackageId, Uuid}
 import org.genivi.sota.messaging.MessageBusPublisher
 import org.genivi.sota.messaging.Messages.{CampaignLaunched, UriWithSimpleEncoding}
 import org.slf4j.LoggerFactory
-import slick.driver.MySQLDriver.api._
+import slick.jdbc.MySQLProfile.api._
 
 import scala.concurrent.{ExecutionContext, Future}
 

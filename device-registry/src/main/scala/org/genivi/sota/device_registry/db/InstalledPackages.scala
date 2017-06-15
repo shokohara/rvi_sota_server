@@ -15,7 +15,7 @@ import org.genivi.sota.db.Operators.regex
 import org.genivi.sota.device_registry.common.PackageStat
 import org.genivi.sota.refined.PackageIdDatabaseConversions._
 import org.genivi.sota.refined.SlickRefined._
-import slick.driver.MySQLDriver.api._
+import slick.jdbc.MySQLProfile.api._
 
 import scala.concurrent.ExecutionContext
 

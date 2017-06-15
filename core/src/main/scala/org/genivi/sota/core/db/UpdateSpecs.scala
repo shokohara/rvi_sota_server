@@ -15,7 +15,9 @@ import java.time.Instant
 
 import cats.syntax.show.toShowOps
 import org.genivi.sota.http.Errors.MissingEntity
-import slick.driver.MySQLDriver.api._
+import slick.ast.BaseTypedType
+import slick.jdbc.JdbcType
+import slick.jdbc.MySQLProfile.api._
 
 import scala.collection.immutable.Queue
 import scala.concurrent.ExecutionContext
@@ -34,7 +36,8 @@ object UpdateSpecs {
   import UpdateStatus._
   import org.genivi.sota.refined.SlickRefined._
 
-  implicit val UpdateStatusColumn = MappedColumnType.base[UpdateStatus, String](_.value.toString, UpdateStatus.withName)
+  implicit val UpdateStatusColumn: JdbcType[UpdateStatus] with BaseTypedType[UpdateStatus] =
+    MappedColumnType.base[UpdateStatus, String](_.value.toString, UpdateStatus.withName)
 
   case class UpdateSpecRow(requestId: UUID, device: Uuid, status: UpdateStatus, installPos: Int,
                            createdAt: Instant, updatedAt: Instant) {

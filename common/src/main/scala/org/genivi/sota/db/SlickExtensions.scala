@@ -15,7 +15,7 @@ import eu.timepit.refined.string.Uuid
 import org.genivi.sota.data.Namespace
 import org.genivi.sota.http.Errors
 import slick.ast.{Node, TypedType}
-import slick.driver.MySQLDriver.api._
+import slick.jdbc.MySQLProfile.api._
 import slick.lifted.{AbstractTable, Rep}
 
 import scala.concurrent.ExecutionContext

@@ -7,7 +7,7 @@ package org.genivi.sota.core.db
 import org.genivi.sota.core.data.AutoInstall
 import org.genivi.sota.data.{Namespace, PackageId, Uuid}
 import scala.concurrent.ExecutionContext
-import slick.driver.MySQLDriver.api._
+import slick.jdbc.MySQLProfile.api._
 
 object AutoInstalls {
   import org.genivi.sota.refined.SlickRefined._

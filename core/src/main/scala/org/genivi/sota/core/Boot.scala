@@ -32,7 +32,7 @@ import org.genivi.sota.messaging.{MessageBus, MessageBusPublisher}
 import org.genivi.sota.monitoring.{DatabaseMetrics, MetricsSupport}
 import scala.concurrent.{ExecutionContext, Future}
 import scala.util.{Failure, Success, Try}
-import slick.driver.MySQLDriver.api.Database
+import slick.jdbc.MySQLProfile.api.Database
 
 trait RviBoot {
   self: Settings =>

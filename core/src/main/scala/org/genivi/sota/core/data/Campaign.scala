@@ -12,7 +12,7 @@ import java.time.Instant
 import java.util.UUID
 import org.genivi.sota.core.SotaCoreErrors
 import org.genivi.sota.data.{Namespace, PackageId, Uuid}
-import slick.driver.MySQLDriver.api._
+import slick.jdbc.MySQLProfile.api._
 
 import Campaign._
 
